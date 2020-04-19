@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>User Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="users">
+            <div id="heading">
+                Users Page
+            </div>
+
+            <!-- Search box -->
+            <div class="search">
+                <label for="">Search</label>
+                <input id="searchbox" name="searchbox" type="text">
+                <button id="filter" onclick="searchUtil()">Go!</button>
+            </div>
+
+
+            <button class="sort" onclick="sortUtil('1')">Sort</button>
+
+
+            <!-- Toggle switch -->
+            <div class="toggle">
+                <label class="switch">
+                    <input type="checkbox" name="chk">
+                    <span class="slider round"></span>
+                </label>
+                <span>Switch view</span>
+            </div>
+
+
+
+            <!-- Pagination Group -->
+            <span class="pagination">
+                <button id="btn1" onclick='makeRequestPage1()'>1</button>
+                <button id="btn2" onclick='makeRequestPage2()'>2</button>
+            </span>
+
+
+
+            <!-- User card view-->
+            <div class="user-cards">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
